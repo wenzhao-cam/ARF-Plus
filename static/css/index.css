@@ -779,5 +779,6 @@ a:focus {
   }
 
   .grid-cell img {
-    width: fit-content
+    width: 50%;
+    height: fit-content;
   }

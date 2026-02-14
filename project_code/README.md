@@ -204,7 +204,6 @@ cd opt
 # . ./try_tnt_spatial_combinations_control_semantic.sh Horse 131 7;
 ```
 
-
 ### Check results
 The stylized artistic radiance field is inside ```opt/ckpt_arf/[scene_name]_[style_id]_[control_type]```(single style input) or ```opt/ckpt_arf/[scene_name]_[style1_id]_[style2_id]_[control_type]```(multiple styles input), while the photorealistic one is inside ```opt/ckpt_svox2/[scene_name]```.
 

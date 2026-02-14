@@ -15,12 +15,16 @@ Citation:
 
 ## Quick start
 
-### Install environment
-```bash
-. ./create_env.sh
+### Project Source Code
+Folder: 
 ```
-### Download data
-```bash
-. ./download_data.sh
+project_code
+```
+The README in that folder explains how to deploy and run the project.
+
+### Video Results
+Folder: 
+```
+project_webpage/videos
 ```
 

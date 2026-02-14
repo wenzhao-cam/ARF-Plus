@@ -1,0 +1,30 @@
+SCENE=$1
+STYLE=$2
+
+data_type=llff
+ckpt_svox2=ckpt_svox2/${data_type}/${SCENE}
+ckpt_arf=ckpt_arf/${data_type}/${SCENE}_${STYLE}_origin_to_compare_spatial_control
+data_dir=../data/${data_type}/${SCENE}
+style_img=../data/styles/${STYLE}.jpg
+
+
+if [[ ! -f "${ckpt_svox2}/ckpt.npz" ]]; then
+    python opt.py -t ${ckpt_svox2} ${data_dir} \
+                    -c configs/llff.json
+fi
+
+python opt_style_origin_disable_recolor.py -t ${ckpt_arf} ${data_dir} \
+                -c configs/llff_fixgeom.json \
+                --init_ckpt ${ckpt_svox2}/ckpt.npz \
+                --style ${style_img} \
+                --mse_num_epoches 1 --nnfm_num_epoches 10 \
+                --content_weight 1e-3 \
+
+python render_imgs.py ${ckpt_arf} ${data_dir} \
+                    --render_path
+
+# all other spatial experimens
+# --nnfm_num_epoches 4
+
+# spatial blend
+# epoch 10

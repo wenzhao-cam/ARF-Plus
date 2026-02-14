@@ -757,6 +757,7 @@ a:focus {
     max-width: 1000px;
     margin: 0 auto;
     height: auto;
+    text-align: center;
   }
   
   .grid-row {

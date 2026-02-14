@@ -156,6 +156,8 @@ body {
     width: fit-content;
     width: -webkit-fit-content;
     width: -moz-fit-content;
+    height: auto;
+    display: block;
     font-weight: 600;
     background: var(--background-accent);
     padding: 0.5rem 1rem;
@@ -169,6 +171,8 @@ body {
     width: fit-content;
     width: -webkit-fit-content;
     width: -moz-fit-content;
+    height: auto;
+    display: block;
     font-weight: 700;
     background: linear-gradient(135deg, #fef2f2, #fee2e2);
     padding: 0.5rem 1rem;
@@ -788,4 +792,6 @@ a:focus {
     height: fit-content;
     width: -webkit-fit-content;
     width: -moz-fit-content;
+    height: auto;
+    display: block;
   }

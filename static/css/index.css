@@ -765,7 +765,7 @@ a:focus {
   }
   
   .grid-cell {
-    width: 35%;
+    width: 33%;
     padding: 0;
     display: flex;
     justify-content: center;
@@ -776,4 +776,8 @@ a:focus {
     width: 100%;
     height: auto;
     display: block;
+  }
+
+  .grid-cell img {
+    width: fit-content
   }

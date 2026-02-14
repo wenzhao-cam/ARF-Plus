@@ -154,6 +154,8 @@ body {
 .publication-venue {
     color: var(--text-secondary);
     width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     font-weight: 600;
     background: var(--background-accent);
     padding: 0.5rem 1rem;
@@ -165,6 +167,8 @@ body {
 .publication-awards {
     color: #ef4444;
     width: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
     font-weight: 700;
     background: linear-gradient(135deg, #fef2f2, #fee2e2);
     padding: 0.5rem 1rem;
@@ -782,4 +786,6 @@ a:focus {
   .grid-cell img {
     width: 80%;
     height: fit-content;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
   }

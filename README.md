@@ -27,4 +27,6 @@ Folder:
 ```
 project_webpage/videos
 ```
-
+## Contact
+Thanks for your interest in ARF-Plus!
+We welcome collaboration — Feel free to reach out : wl301 [at] cam [dot] ac[dot]uk. (Please replace [at] with @ and [dot] with .)

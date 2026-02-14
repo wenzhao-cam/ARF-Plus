@@ -750,4 +750,30 @@ a:focus {
 }
 
 
-
+.demo-grid {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: auto;
+  }
+  
+  .grid-row {
+    display: flex;
+    justify-content: center; 
+  }
+  
+  .grid-cell {
+    width: 35%;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .grid-cell video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
